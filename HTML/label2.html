@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>标签（二）</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<link href="" rel="stylesheet">
+
+		<style type="text/css">
+			th,td{
+				width: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 表格 -->
+      	<table border="1">
+      		<tr>
+      			<td>第一行第一列</td>
+      			<td>第一行第二列</td>
+      			<td>第一行第三列</td>
+      		</tr>
+      		<tr>
+      			<td>第二行第一列</td>
+      			<td>第二行第二列</td>
+      			<td>第二行第三列</td>
+      		</tr>
+      		<tr>
+      			<td>第三行第一列</td>
+      			<td>第三行第二列</td>
+      			<td>第三行第三列</td>
+      		</tr>
+      	</table>
+      	<!-- 表格 table>((tr>th*3)+(tr>td*3)*3) -->
+     	<table border="1">
+     		<tr>
+      			<th>一</th>
+      			<th>二</th>
+      			<th>三</th>
+      		</tr>
+      		<tr>
+      			<td>第一行第一列</td>
+      			<td>第一行第二列</td>
+      			<td>第一行第三列</td>
+      		</tr>
+      		<tr>
+      			<td>第二行第一列</td>
+      			<td>第二行第二列</td>
+      			<td>第二行第三列</td>
+      		</tr>
+      		<tr>
+      			<td>第三行第一列</td>
+      			<td>第三行第二列</td>
+      			<td>第三行第三列</td>
+      		</tr>
+      	</table>
+
+      	
+        <!-- 合并单元格 -->
+      	<table border="1">
+      		<tr>
+      			<td rowspan="2">1</td>
+      			<td colspan="2">2</td>
+      			<td>3</td>
+      			<td>4</td>
+      		</tr>
+      		<tr>
+      			<td>5</td>
+      			<td>6</td>
+      			<td>7</td>
+      			<td>8</td>
+      		</tr>
+      		<tr>
+      			<td>9</td>
+      			<td colspan="3">10</td>
+      			<td>11</td>
+      		</tr>
+      		<tr>
+      			<td colspan="2">12</td>
+      			<td colspan="3">13</td>
+      		</tr>
+      	</table>
+
+        <!-- 表格分区 -->
+        <table border="1">
+        	<caption>标题</caption>
+        	<thead>
+        		<tr>
+	      			<th>一</th>
+	      			<th>二</th>
+	      			<th>三</th>
+      		    </tr>
+        	</thead>
+        	<tbody>
+        		<tr>
+	      			<td>第一行第一列</td>
+	      			<td>第一行第二列</td>
+	      			<td>第一行第三列</td>
+      		    </tr>
+      		    <tr>
+	      			<td>第二行第一列</td>
+	      			<td>第二行第二列</td>
+	      			<td>第二行第三列</td>
+      		    </tr>
+      		    <tr>
+	      			<td>第三行第一列</td>
+	      			<td>第三行第二列</td>
+	      			<td>第三行第三列</td>
+      		    </tr>
+        	</tbody>
+        </table>
+
+        <!-- 表格综合案例 -->
+
+        <table border="1">
+        	<caption>VIB项目评估</caption>
+        	<thead>
+        		<tr>
+        			<th>模块</th>
+        			<th colspan="2">功能</th>
+        			<th>时间</th>
+        			<th>备注</th>
+        		</tr>
+        	</thead>
+        	<tbody>
+        		<tr>
+        			<td rowspan="7">首页</td>
+        			<td>首页</td>
+        			<td></td>
+        			<td>0.5</td>
+        			<td></td>
+        		</tr>
+        		<tr>
+        			<td rowspan="6">资产</td>
+        			<td>资产</td>
+        			<td>1</td>
+        			<td>待确认</td>
+        		</tr>
+        		<tr>
+        			<td>兑换</td>
+        			<td>0.5</td>
+        			<td></td>
+        		</tr>
+        		<tr>
+        			<td>兑换记录</td>
+        			<td>0.25</td>
+        			<td></td>
+        		</tr>
+        		<tr>
+        			<td>记录详情</td>
+        			<td>0.25</td>
+        			<td></td>
+        		</tr>
+        		<tr>
+        			<td>转账</td>
+        			<td>0.25</td>
+        			<td></td>
+        		</tr>
+        		<tr>
+        			<td>收款</td>
+        			<td>0.25</td>
+        			<td></td>
+        		</tr>
+                <tr>
+                	<td rowspan="3">登录注册</td>
+                	<td>注册</td>
+                	<td></td>
+                	<td>0.5</td>
+                	<td>待沟通</td>
+                </tr>
+                <tr>
+                	<td>登录</td>
+                	<td></td>
+                	<td>0.5</td>
+                	<td></td>
+                </tr>
+                <tr>
+                	<td>忘记密码</td>
+                	<td></td>
+                	<td>0.25</td>
+                	<td></td>
+                </tr>
+        	</tbody>
+        </table>
+	
+	    <h2>表单</h2>
+	  
+	    <!-- 表单 -->
+	    <form method="get">
+
+	        <p>
+	        	普通文本框：
+	        	<input type="text" value="请输入内容">
+	        </p>
+	        <p>
+	        	密码框：
+	        	<input type="password">
+	        </p>
+	        <p>
+	            性别：
+	        	<input type="radio" name="sex">男
+	        	<input type="radio" name="sex">女
+	        	<input type="radio" name="sex">保密
+	        </p>
+
+	        <p>
+	            技能：
+	        	<input type="checkbox" name="skill">Objective-C
+	        	<input type="checkbox" name="skill">Swift
+	        	<input type="checkbox" name="skill">HTML
+	        	<input type="checkbox" name="skill">其他
+	        </p>
+	        <p>
+	            简介：
+	        	<textarea rows="5" cols="30">秋天来临了天空像一块覆盖大地的蓝宝石。村外那个小池塘睁着碧澄澄的眼睛，凝望着这美好的天色。一对小白鹅侧着脑袋欣赏自己映在水里的影子。山谷里枫树的叶子，不知是否喝了过量的酒，红的像一团火似的。村前村后的稻子，低着头弯着腰，在秋风中默默地等待着人们去收割，半空中，排着“人”字形的雁群，高兴的唱着歌，告别人们，向天边慢慢飞去……</textarea>
+	        </p>
+
+	        <p>
+	            简介：
+	        	<select>
+	        		<option>北京</option>
+	        		<option>上海</option>
+	        		<option>广州</option>
+	        		<option>深圳</option>
+	        		<option>其他</option>
+	        	</select>
+	        </p>
+
+	        <p>
+	        	<input type="button" value="普通按钮">
+	            <input type="reset" value="重置">
+	            <input type="submit" value="提交">
+	        </p>
+	    </form>
+
+	    <!-- 其他 -->
+
+	    <p>显示一个p标签：&lt;p&gt;</p>
+	    <p>中间显示多个空格&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;结尾</p>
+
+	    <!-- 其他 -->
+
+	    <font>文字</font>
+	    <b>加粗</b>
+	    <i>倾斜</i>
+	    <u>下划线</u>
+	    <del>删除线</del>
+	    <strong>strong标签,加强，也有加粗效果</strong>
+        <em>em标签，加强，也有倾斜效果</em>
+        <br>换行
+        <hr>水平分割线
+
+
+
+
+	    <p id="9981">我们不一样</p>
+	    <a name="snowolf"></a>
+	    <p>Name</p>
+	    <p>第二段</p>
+	    <p>第三段</p>
+	</body>
+</html>
