@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>标准文档流</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<link href="" rel="stylesheet">
+
+		<style>
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			div {
+				width: 50px;
+				height: 50px;
+				margin: 10px;
+				background: green;
+
+				float: left;
+
+				margin: 0px;
+			}
+			.box {
+				width: 800px;
+				height: 600px;
+				background: lightgray;
+
+				/*float: none;*/
+
+				margin-top: 10px;
+
+				clear: left;
+			}
+			.box1 {
+				width: 150px;
+				height: 350px;
+				background: green;
+			}
+			.box2 {
+				width: 200px;
+				height: 250px;
+				background: blue;
+			}
+			.box3 {
+				width: 250px;
+				height: 150px;
+				background: red;
+			}
+			.box4 {
+				width: 300px;
+				height: 250px;
+				background: purple;
+			}
+			.box5 {
+				width: 200px;
+				height: 100px;
+				background: orange;
+			}
+            /*文字围绕*/
+			.content {
+				width: 600px;
+                height: 800px;
+			}
+			div .img {
+				width: 400px;
+                height: 600px;
+				float: left;
+			}
+            img {
+            	width: 400px;
+                height: 600px;
+            }
+			
+		</style>
+	</head>
+<body>
+
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+
+    <div class="box">
+    	<!-- div.box$*5 -->
+	    <div class="box1">1</div>
+	    <div class="box2">2</div>
+	    <div class="box3">3</div>
+	    <div class="box4">4</div>
+	    <div class="box5">5</div>
+    </div>
+	
+    <!-- 文字围绕 -->
+    <div class="content">
+    	<div class="img">
+    		<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1573573958279&di=c28b56f5c4c2a19d200e9701c42f5a85&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201503%2F21%2F20150321175635_HEWK4.jpeg" alt="">
+    	</div>
+		<p>秋天来临了天空像一块覆盖大地的蓝宝石。村外那个小池塘睁着碧澄澄的眼睛，凝望着这美好的天色。一对小白鹅侧着脑袋欣赏自己映在水里的影子。山谷里枫树的叶子，不知是否喝了过量的酒，红的像一团火似的。村前村后的稻子，低着头弯着腰，在秋风中默默地等待着人们去收割，半空中，排着“人”字形的雁群，高兴的唱着歌，告别人们，向天边慢慢飞去……秋天来临了天空像一块覆盖大地的蓝宝石。村外那个小池塘睁着碧澄澄的眼睛，凝望着这美好的天色。一对小白鹅侧着脑袋欣赏自己映在水里的影子。山谷里枫树的叶子，不知是否喝了过量的酒，红的像一团火似的。村前村后的稻子，低着头弯着腰，在秋风中默默地等待着人们去收割，半空中，排着“人”字形的雁群，高兴的唱着歌，告别人们，向天边慢慢飞去……秋天来临了天空像一块覆盖大地的蓝宝石。村外那个小池塘睁着碧澄澄的眼睛，凝望着这美好的天色。一对小白鹅侧着脑袋欣赏自己映在水里的影子。山谷里枫树的叶子，不知是否喝了过量的酒，红的像一团火似的。村前村后的稻子，低着头弯着腰，在秋风中默默地等待着人们去收割，半空中，排着“人”字形的雁群，高兴的唱着歌，告别人们，向天边慢慢飞去……</p>
+        
+    </div>
+
+</body>
+</html>
